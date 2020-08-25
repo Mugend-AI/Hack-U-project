@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":19.20172119140625,"y":-117.59217834472656,"z":412.41796875},"rotation":{"x":-0.334226131439209,"y":0.47504499554634097,"z":-0.2013009488582611,"w":-0.7887398600578308},"size":492.4322814941406,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.0,"y":3.3284997940063478,"z":-4.76837158203125e-7},"rotation":{"x":-0.08396715670824051,"y":0.8317974209785461,"z":-0.13108724355697633,"w":-0.5328029990196228},"size":30.5767765045166,"orthographic":false}
+>>>>>>> adachi

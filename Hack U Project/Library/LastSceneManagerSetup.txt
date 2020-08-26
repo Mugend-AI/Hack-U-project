@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scene/test.unity
-=======
-- path: Assets/Scene/effect.unity
->>>>>>> adachi
+- path: Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

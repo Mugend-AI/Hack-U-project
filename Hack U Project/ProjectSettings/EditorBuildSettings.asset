@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/ARmarkerTest2.unity
-    guid: c64330301d178414f90983cc766ecb16
+    path: Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity
+    guid: 8b5735a2d242c4dbface50f022a1c96b
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 919ff55674381bb499f37f76ab9980c4,
       type: 2}

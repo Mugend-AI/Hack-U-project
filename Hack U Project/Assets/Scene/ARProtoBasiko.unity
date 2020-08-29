@@ -483,7 +483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   watermellon: {fileID: 3886956463886626719, guid: 99ce9f3736d62f14d95fbf3c755adffc,
     type: 3}
-  stick: {fileID: 1278818753727987797, guid: 0d6ec6bc7ca8c44888c604d494c6fd95, type: 3}
+  stick: {fileID: 7312624301216320093, guid: b64afb9e570954aab9d661f0c22285eb, type: 3}
 --- !u!4 &1553821041
 Transform:
   m_ObjectHideFlags: 0

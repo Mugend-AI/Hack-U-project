@@ -177,7 +177,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f66655b38428d40769e9e41ee237cbdc, type: 3}
+    m_Font: {fileID: 12800000, guid: c860a6a83185ed84f8141840fe05193a, type: 3}
     m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: "\u30B9\u30BF\u30FC\u30C8"
 --- !u!222 &101762125
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -592,17 +592,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: bac9a64936f7cfe4798260c80900d05b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.85
+      value: -3.7
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: bac9a64936f7cfe4798260c80900d05b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.94
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: bac9a64936f7cfe4798260c80900d05b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: bac9a64936f7cfe4798260c80900d05b,
         type: 3}
@@ -676,17 +676,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1cb66709ca749d0439d89cec645217c6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.33
+      value: 7.3
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1cb66709ca749d0439d89cec645217c6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.64
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1cb66709ca749d0439d89cec645217c6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1cb66709ca749d0439d89cec645217c6,
         type: 3}
@@ -936,11 +936,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4fa83fb429df67c46be74ff5190fae46, type: 3}
-    m_FontSize: 100
+    m_FontSize: 130
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 100
+    m_MinSize: 0
+    m_MaxSize: 130
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1

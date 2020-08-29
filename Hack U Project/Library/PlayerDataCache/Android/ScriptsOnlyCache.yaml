@@ -8,10 +8,9 @@ ScriptsOnlyBuild:
     - GoogleARCore.AugmentedImageDatabase
     - GoogleARCore.Examples.Common.DetectedPlaneGenerator
     - GoogleARCore.Examples.Common.DetectedPlaneVisualizer
-    - JoyconManager
     - PutScript
+    - SceneJunp
     - SelfDestroy
-    - StickManager
     - Trackingtest
     - WaterMellonManager
     Unity.2D.Tilemap.Editor.dll:
@@ -33,8 +32,18 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
+    com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
-    Assets/Scene/ARProtoBasiko.unity:
+    Assets/Scene/ARproto1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -62,33 +71,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11386}
+      Script: {instanceID: 11394}
     - Class: 114
-      Script: {instanceID: 12066}
+      Script: {instanceID: 12076}
     - Class: 114
-      Script: {instanceID: 12386}
+      Script: {instanceID: 12396}
     - Class: 114
-      Script: {instanceID: 12444}
+      Script: {instanceID: 12454}
     - Class: 114
-      Script: {instanceID: 12618}
+      Script: {instanceID: 12628}
     - Class: 114
-      Script: {instanceID: 13096}
+      Script: {instanceID: 13106}
     - Class: 114
-      Script: {instanceID: 13204}
+      Script: {instanceID: 13214}
     - Class: 114
-      Script: {instanceID: 13308}
+      Script: {instanceID: 13318}
     - Class: 114
-      Script: {instanceID: 13452}
+      Script: {instanceID: 13462}
     - Class: 114
-      Script: {instanceID: 13580}
+      Script: {instanceID: 13590}
     - Class: 114
-      Script: {instanceID: 13684}
+      Script: {instanceID: 13714}
     - Class: 114
-      Script: {instanceID: 13704}
-    - Class: 114
-      Script: {instanceID: 13766}
-    - Class: 114
-      Script: {instanceID: 14002}
+      Script: {instanceID: 13776}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -100,6 +105,63 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    Assets/Scene/TitleScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11246}
+    - Class: 114
+      Script: {instanceID: 11424}
+    - Class: 114
+      Script: {instanceID: 11526}
+    - Class: 114
+      Script: {instanceID: 11584}
+    - Class: 114
+      Script: {instanceID: 12198}
+    - Class: 114
+      Script: {instanceID: 12854}
+    - Class: 114
+      Script: {instanceID: 13586}
+    - Class: 114
+      Script: {instanceID: 14172}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -156,6 +218,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneJunp
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -252,18 +320,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.CloudAnchors
     className: NetworkManagerUIController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements
-    className: CallbackExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements.Editor
-    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: 4cb443ffb7b54a755d9852ae91684f7d
@@ -1004,5 +1060,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scene/ARProtoBasiko.unity
-  playerPath: /Users/bashiko_da_gama/Documents/GitHub/Hack-U-project/Hack U Project/arproto2.apk
+  - Assets/Scene/TitleScene.unity
+  - Assets/Scene/ARproto1.unity
+  playerPath: C:/Users/obaru/Desktop/Hack-U-project/Hack U Project/Proto1.apk

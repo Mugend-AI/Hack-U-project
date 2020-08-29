@@ -13,13 +13,13 @@ public class ScreenShotAndro: MonoBehaviour
 
 
 
-    private void Update()
+
+    public void Onclick ()
     {
-        // スペースキーが押されたら
-        if (Input.GetKeyDown(KeyCode.Space)) {
+       
 
             Share();
-        }
+        
 
 
     }

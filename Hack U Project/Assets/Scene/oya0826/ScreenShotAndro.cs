@@ -16,11 +16,63 @@ public class ScreenShotAndro: MonoBehaviour
     private void Update()
     {
         // スペースキーが押されたら
+        if (Input.GetKeyDown(KeyCode.Space)) {
+
+            Share();
+        }
+
+
+    }
+
+
+    public void Share() {
+
+        StartCoroutine(_Share());
+    }
+
+
+    public IEnumerator _Share()
+    {
+
+        /*文字列のフォーマット指定*/
+        String fileName = String.Format("image_{0:yyyyMMdd_Hmmss}.png", DateTime.Now);
+
+        /*unityが利用するデータが保存されるパス*/
+        /*Andoridの場合…/data/app/xxx.xxx.xxx.apk*/
+        /*Andoridで永続性のあるデータを保存するには
+          /storage/emulated/0/android/data/{アプリのパッケージ名}/files/任意のファイル名*/
+
+        String imagePath = Application.persistentDataPath + "/" + fileName;
+
+        /*スクリーンショットの保存*/
+        ScreenCapture.CaptureScreenshot(imagePath);
+
+        Debug.Log(imagePath);
+
+        /*再開条件にした関数がtrueを返すと再開する*/
+        /*再開条件…imagePathが通ればture*/
+        yield return new WaitUntil(() => File.Exists(imagePath));
+
+
+
+
+
+    }
+
+
+
+
+
+
+    /*
+    private void Update()
+    {
+        // スペースキーが押されたら
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
             
-
+                
                 //現在時刻を取得
                 DateTime presentTime = DateTime.Now;
 
@@ -36,6 +88,12 @@ public class ScreenShotAndro: MonoBehaviour
         }
     }
 
+
+
+
+
+
+    
     // 画面全体のスクリーンショットを保存する
     private void CaptureScreenShot(string filePath)
     {
@@ -53,4 +111,6 @@ public class ScreenShotAndro: MonoBehaviour
 
         }
     }
+    */
+
 }

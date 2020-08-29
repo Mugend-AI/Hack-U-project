@@ -15,6 +15,8 @@ public class ShareController : MonoBehaviour
     {
         string imgPath = Application.persistentDataPath + "/image.png";
 
+        
+
         // 前回のデータを削除
         File.Delete(imgPath);
 
@@ -32,5 +34,7 @@ public class ShareController : MonoBehaviour
         string tweetText = "";
         string tweetURL = "";
         SocialConnector.SocialConnector.Share(tweetText, tweetURL, imgPath);
+
+        
     }
 }

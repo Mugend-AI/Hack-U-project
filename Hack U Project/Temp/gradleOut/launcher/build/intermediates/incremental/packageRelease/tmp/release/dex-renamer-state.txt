@@ -1,4 +1,4 @@
-#Sat Aug 29 17:51:01 JST 2020
+#Sat Aug 29 18:47:37 JST 2020
 base.0=/Users/bashiko_da_gama/Documents/GitHub/Hack-U-project/Hack U Project/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
 path.0=classes.dex
 renamed.0=classes.dex

@@ -255,12 +255,17 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
     <Compile Include="Assets\PutScript.cs" />
+    <Compile Include="Assets\Scene\oya0826\Authority.cs" />
+    <Compile Include="Assets\Scene\oya0826\PermissionAuthorizationExample.cs" />
     <Compile Include="Assets\Scene\oya0826\ScreenShotAndro.cs" />
     <Compile Include="Assets\Scene\oya0826\ScreenShotCapturer.cs" />
+    <Compile Include="Assets\Scene\oya0826\ShareController.cs" />
     <Compile Include="Assets\Script\AugmentedImageSample.cs" />
     <Compile Include="Assets\Script\SelfDestroy.cs" />
     <Compile Include="Assets\Script\Trackingtest.cs" />
     <Compile Include="Assets\Script\WaterMellonManager.cs" />
+    <Compile Include="Assets\SocialConnector\Sample\Sample.cs" />
+    <Compile Include="Assets\SocialConnector\SocialConnector.cs" />
     <None Include="Assets\GoogleARCore\Examples\AugmentedFaces\Materials\Shaders\AugmentedFaceOccluder.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\OcclusionImageEffect.shader" />
@@ -521,6 +526,12 @@
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>C:/Users/Oyaio/OneDrive/ドキュメント/GitHub/Hack-U-project/Hack U Project/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>E:/Unity/editor/2019.3.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>E:/Unity/editor/2019.3.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>E:/Unity/editor/2019.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

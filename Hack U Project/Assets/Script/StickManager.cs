@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using UnityEngine.UI;
 
 public class StickManager : MonoBehaviour
 {
@@ -11,7 +10,6 @@ public class StickManager : MonoBehaviour
     private Joycon m_joyconR;
     private Joycon.Button? m_pressedButtonR;
     private GameObject stickPosition;
-    [SerializeField] Text text;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,11 +31,8 @@ public class StickManager : MonoBehaviour
 
         m_pressedButtonR = null;
 
-        if (m_joyconR == null)
-        {
-            text.text = "接続なし";
-            return;
-        }
+        if (m_joyconR == null) return;
+
         foreach (var button in m_buttons)
         {
             if (m_joyconR.GetButton(button))

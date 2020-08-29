@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{2238F08E-0F7E-17AE-78B4-B358EE5C5245}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/SceneJunp.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/PutScript.cs">
     <Files>
       <File FileName="Assets/Script/SelfDestroy.cs" Line="3" Column="19" />
-      <File FileName="Assets/Script/SceneJunp.cs" Line="8" Column="22" />
+      <File FileName="Assets/Script/SceneJunp.cs" Line="7" Column="2" />
+      <File FileName="Assets/Script/WaterMellonManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/PutScript.cs" Line="20" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

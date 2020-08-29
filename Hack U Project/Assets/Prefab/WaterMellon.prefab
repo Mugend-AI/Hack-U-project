@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d75c0cd95fc5b4644b5ed451017ae1d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hiteffect: {fileID: 2919069833609374928, guid: c1f0079ab11b647e4baadf53c38fb4c2,
+  hiteffect: {fileID: 5553256812879266350, guid: ab83e52069487ae4b975121892c332d6,
     type: 3}
 --- !u!54 &746063329422618349
 Rigidbody:

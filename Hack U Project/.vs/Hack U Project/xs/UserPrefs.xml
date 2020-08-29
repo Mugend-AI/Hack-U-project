@@ -1,5 +1,10 @@
 ﻿<Properties StartupConfiguration="{2238F08E-0F7E-17AE-78B4-B358EE5C5245}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/SceneJunp.cs">
+    <Files>
+      <File FileName="Assets/Script/SelfDestroy.cs" Line="3" Column="19" />
+      <File FileName="Assets/Script/SceneJunp.cs" Line="8" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />

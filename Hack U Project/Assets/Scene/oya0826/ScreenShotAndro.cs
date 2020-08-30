@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.IO;
 
@@ -9,20 +10,8 @@ using System.IO;
 /// </summary>
 public class ScreenShotAndro: MonoBehaviour
 {
+    [SerializeField] Text pathtext;
     String Ntime;  //String型文字列の変換用の変数
-
-
-
-
-    public void Onclick ()
-    {
-       
-
-            Share();
-        
-
-
-    }
 
 
     public void Share() {
@@ -47,7 +36,9 @@ public class ScreenShotAndro: MonoBehaviour
         /*スクリーンショットの保存*/
         ScreenCapture.CaptureScreenshot(imagePath);
 
+        pathtext.text = imagePath;
         Debug.Log(imagePath);
+
 
         /*再開条件にした関数がtrueを返すと再開する*/
         /*再開条件…imagePathが通ればture*/

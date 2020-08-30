@@ -1,17 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - GoogleARCore.ARCoreBackgroundRenderer
-    - GoogleARCore.ARCoreCameraConfigFilter
-    - GoogleARCore.ARCoreSession
-    - GoogleARCore.ARCoreSessionConfig
-    - GoogleARCore.AugmentedImageDatabase
-    - GoogleARCore.Examples.Common.DetectedPlaneGenerator
-    - GoogleARCore.Examples.Common.DetectedPlaneVisualizer
-    - PutScript
-    - SelfDestroy
-    - Trackingtest
-    - WaterMellonManager
+    - ShareController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -29,10 +19,16 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.SpatialTracking.dll:
-    - UnityEngine.SpatialTracking.TrackedPoseDriver
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scene/ARproto1.unity:
+    Assets/Scene/oya0826/oya_screentest1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -51,49 +47,45 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
     - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11386}
+      Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 12066}
+      Script: {instanceID: 11524}
     - Class: 114
-      Script: {instanceID: 12384}
+      Script: {instanceID: 11582}
     - Class: 114
-      Script: {instanceID: 12442}
+      Script: {instanceID: 11668}
     - Class: 114
-      Script: {instanceID: 12616}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 13092}
+      Script: {instanceID: 12862}
     - Class: 114
-      Script: {instanceID: 13200}
+      Script: {instanceID: 13594}
     - Class: 114
-      Script: {instanceID: 13304}
-    - Class: 114
-      Script: {instanceID: 13448}
-    - Class: 114
-      Script: {instanceID: 13576}
-    - Class: 114
-      Script: {instanceID: 13698}
-    - Class: 114
-      Script: {instanceID: 13760}
+      Script: {instanceID: 14176}
     - Class: 115
       Script: {instanceID: 0}
-    - Class: 135
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 198
+    - Class: 213
       Script: {instanceID: 0}
-    - Class: 199
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -132,6 +124,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore
     className: Anchor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Authority
   - hash:
       serializedVersion: 2
       Hash: c92c98f50b15b556bcf9ab70038dd44b
@@ -258,6 +256,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.Advertisements.dll
     namespaceName: UnityEngine.Advertisements.Editor
     className: Placeholder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShareController
   - hash:
       serializedVersion: 2
       Hash: 4cb443ffb7b54a755d9852ae91684f7d
@@ -454,6 +458,12 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScreenShotAndro
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.Common
     className: ShadowQuadHelper
   - hash:
@@ -488,6 +498,12 @@ ScriptsOnlyBuild:
     className: ARCoreBackgroundRenderer
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SocialConnector
+    className: Sample
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -498,6 +514,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PermissionAuthorizationTest
+    className: PermissionAuthorizationExample
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -824,6 +846,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScreenShotCapturer
+  - hash:
+      serializedVersion: 2
       Hash: 8118d37154f214ab0486c7b2852792b7
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.ObjectManipulation
@@ -974,5 +1002,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scene/ARproto1.unity
-  playerPath: C:/Users/obaru/Desktop/Hack-U-project/Hack U Project/Ptoto1.apk
+  - Assets/Scene/oya0826/oya_screentest1.unity
+  playerPath: "C:/Users/Oyaio/OneDrive/\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8/GitHub/Hack-U-project/Hack
+    U Project/screenshottest.apk"

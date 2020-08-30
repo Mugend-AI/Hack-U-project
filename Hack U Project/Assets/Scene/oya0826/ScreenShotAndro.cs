@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using SocialConnector;
 using System;
 using System.IO;
 
@@ -39,14 +40,15 @@ public class ScreenShotAndro: MonoBehaviour
         pathtext.text = imagePath;
         Debug.Log(imagePath);
 
+        // 投稿する
+        string tweetText = "ツイートテスト";
+        string tweetURL = "";
+        SocialConnector.SocialConnector.Share(tweetText, tweetURL, imagePath);
+
 
         /*再開条件にした関数がtrueを返すと再開する*/
         /*再開条件…imagePathが通ればture*/
         yield return new WaitUntil(() => File.Exists(imagePath));
-
-
-
-
 
     }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Android;
 using SocialConnector;
 using System;
 using System.IO;
@@ -16,13 +17,17 @@ public class ScreenShotAndro: MonoBehaviour
 
 
     public void Share() {
-
+        Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite);
+        Permission.HasUserAuthorizedPermission(Permission.ExternalStorageRead);
+        Permission.RequestUserPermission(Permission.ExternalStorageWrite);
+        Permission.RequestUserPermission(Permission.ExternalStorageRead);
         StartCoroutine(_Share());
     }
 
 
     public IEnumerator _Share()
     {
+        
 
         /*文字列のフォーマット指定*/
         String fileName = String.Format("image_{0:yyyyMMdd_Hmmss}.png", DateTime.Now);

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/Scene/\u3059\u3044\u304B\u3068\u68D2.unity"
+- path: Assets/Scene/BashikoScene/JoystickTestScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

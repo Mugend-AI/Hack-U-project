@@ -1,0 +1,2 @@
+com.hogehoge.HackUProject.resources
+xml filepaths

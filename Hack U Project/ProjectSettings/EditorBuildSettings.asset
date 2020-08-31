@@ -18,14 +18,17 @@ EditorBuildSettings:
     path: Assets/Scene/KinokoScene/ARproto1.unity
     guid: 3062e8bb72451804193153dce2c09bf3
   - enabled: 0
-    path: Assets/Scene/ARProtoBasiko.unity
+    path: Assets/Scene/BashikoScene/ARProtoBasiko.unity
     guid: 8300dd09f175a43079b68dad55ad94e5
   - enabled: 0
     path: Assets/Scene/oya0826/oya_screentest1.unity
     guid: a96fb2961133eeb419e4bc756c9632e5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/KinokoScene/SSkinoko/KinokoSS.unity
     guid: a665e13a94d55e542925f25081587431
+  - enabled: 1
+    path: Assets/Scene/BashikoScene/JoystickTestScene.unity
+    guid: b23d049cda3cf4bf48f872edd01a962b
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 919ff55674381bb499f37f76ab9980c4,
       type: 2}

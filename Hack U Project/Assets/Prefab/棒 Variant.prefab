@@ -14,7 +14,7 @@ CapsuleCollider:
   m_Height: 37.48753
   m_Direction: 1
   m_Center: {x: 0, y: 18.96707, z: 0}
---- !u!114 &832383089
+--- !u!114 &579504614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23,21 +23,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7226082546507564068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763399ec8715b4689b61e73aa1d14cf1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnableIMU: 1
-  EnableLocalize: 1
---- !u!114 &832383090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7226082546507564068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bb3357e9bfbe41d9be0461a374f8ef4, type: 3}
+  m_Script: {fileID: 11500000, guid: bbd66a6bd829e4e909aa17008faa1e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1687124572038798637
@@ -55,7 +41,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1cb66709ca749d0439d89cec645217c6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.177
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1cb66709ca749d0439d89cec645217c6,
         type: 3}

@@ -16,7 +16,7 @@ public class SS : MonoBehaviour
 
     private IEnumerator TakeSS()
     {
-        yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(1.5f);
 
         var w = Screen.width;
         var h = Screen.height;
@@ -49,6 +49,8 @@ public class SS : MonoBehaviour
             if (File.Exists(imgPath)) break;
             yield return null;
         }
+
+        yield return new WaitForSeconds(1.5f);
 
         // 投稿する
         string tweetText = "てすと";

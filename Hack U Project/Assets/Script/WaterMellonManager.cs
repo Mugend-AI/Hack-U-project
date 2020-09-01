@@ -19,10 +19,11 @@ public class WaterMellonManager : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Stick") //Objectタグの付いたゲームオブジェクトと衝突したか判別
+        if (collision.gameObject.tag == "Stick") //StickSタグの付いたゲームオブジェクトと衝突したか判別
         {
             Instantiate(hiteffect, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
             //Destroy(this.gameObject); //衝突したゲームオブジェクトを削除
+            this.GetComponent<SS>().ScreenShot();
         }
     }
 }

@@ -5,17 +5,18 @@ ScriptsOnlyBuild:
     - GoogleARCore.ARCoreCameraConfigFilter
     - GoogleARCore.ARCoreSession
     - GoogleARCore.ARCoreSessionConfig
-    - GoogleARCore.EnvironmentalLight
-    - GoogleARCore.Examples.CloudAnchors.ARCoreWorldOriginHelper
-    - GoogleARCore.Examples.CloudAnchors.AnchorController
-    - GoogleARCore.Examples.CloudAnchors.CloudAnchorsExampleController
-    - GoogleARCore.Examples.CloudAnchors.CloudAnchorsNetworkManager
-    - GoogleARCore.Examples.CloudAnchors.LocalPlayerController
-    - GoogleARCore.Examples.CloudAnchors.NetworkManagerUIController
-    - GoogleARCore.Examples.CloudAnchors.StarController
+    - GoogleARCore.AugmentedImageDatabase
+    - GoogleARCore.Examples.Common.DetectedPlaneGenerator
     - GoogleARCore.Examples.Common.DetectedPlaneVisualizer
-    - GoogleARCore.Examples.Common.PointcloudVisualizer
-    - GoogleARCore.Examples.Common.SafeAreaScaler
+    - InfoJump
+    - PutScript
+    - SS
+    - SceneJump
+    - SettingJump
+    - StickManager2
+    - TitleJump
+    - TitleManager
+    - Trackingtest
     - WaterMellonManager
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -41,14 +42,11 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
-    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
-    com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
-    Assets/GoogleARCore/Examples/CloudAnchors/Scenes/CloudAnchors.unity:
+    Assets/Scene/KinokoScene/ARproto1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -67,74 +65,87 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 89
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11250}
+      Script: {instanceID: 11426}
     - Class: 114
-      Script: {instanceID: 11450}
+      Script: {instanceID: 11548}
     - Class: 114
-      Script: {instanceID: 11534}
+      Script: {instanceID: 12116}
     - Class: 114
-      Script: {instanceID: 11550}
+      Script: {instanceID: 12442}
     - Class: 114
-      Script: {instanceID: 11592}
+      Script: {instanceID: 12500}
     - Class: 114
-      Script: {instanceID: 11658}
+      Script: {instanceID: 13160}
     - Class: 114
-      Script: {instanceID: 11746}
+      Script: {instanceID: 13272}
     - Class: 114
-      Script: {instanceID: 12090}
+      Script: {instanceID: 13376}
     - Class: 114
-      Script: {instanceID: 12102}
+      Script: {instanceID: 13454}
     - Class: 114
-      Script: {instanceID: 12218}
+      Script: {instanceID: 13522}
     - Class: 114
-      Script: {instanceID: 12368}
+      Script: {instanceID: 13656}
     - Class: 114
-      Script: {instanceID: 12474}
+      Script: {instanceID: 13782}
     - Class: 114
-      Script: {instanceID: 12634}
+      Script: {instanceID: 13846}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    Assets/Scene/KinokoScene/InfoScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12708}
+      Script: {instanceID: 11274}
     - Class: 114
-      Script: {instanceID: 12798}
+      Script: {instanceID: 11560}
     - Class: 114
-      Script: {instanceID: 12882}
+      Script: {instanceID: 11618}
     - Class: 114
-      Script: {instanceID: 13196}
+      Script: {instanceID: 12244}
     - Class: 114
-      Script: {instanceID: 13246}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13350}
+      Script: {instanceID: 13166}
     - Class: 114
-      Script: {instanceID: 13382}
+      Script: {instanceID: 13652}
     - Class: 114
-      Script: {instanceID: 13628}
-    - Class: 114
-      Script: {instanceID: 13758}
-    - Class: 114
-      Script: {instanceID: 13822}
-    - Class: 114
-      Script: {instanceID: 14218}
-    - Class: 114
-      Script: {instanceID: 14228}
-    - Class: 114
-      Script: {instanceID: 16678}
-    - Class: 114
-      Script: {instanceID: 16682}
-    - Class: 114
-      Script: {instanceID: 16694}
-    - Class: 114
-      Script: {instanceID: 16696}
-    - Class: 114
-      Script: {instanceID: 16698}
-    - Class: 114
-      Script: {instanceID: 16700}
+      Script: {instanceID: 14244}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -151,7 +162,119 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    - Class: 258
+    Assets/Scene/KinokoScene/SettingScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11274}
+    - Class: 114
+      Script: {instanceID: 11560}
+    - Class: 114
+      Script: {instanceID: 11618}
+    - Class: 114
+      Script: {instanceID: 12244}
+    - Class: 114
+      Script: {instanceID: 12908}
+    - Class: 114
+      Script: {instanceID: 13166}
+    - Class: 114
+      Script: {instanceID: 13652}
+    - Class: 114
+      Script: {instanceID: 14244}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scene/KinokoScene/TitleScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11274}
+    - Class: 114
+      Script: {instanceID: 11456}
+    - Class: 114
+      Script: {instanceID: 11560}
+    - Class: 114
+      Script: {instanceID: 11618}
+    - Class: 114
+      Script: {instanceID: 11962}
+    - Class: 114
+      Script: {instanceID: 12244}
+    - Class: 114
+      Script: {instanceID: 12738}
+    - Class: 114
+      Script: {instanceID: 12908}
+    - Class: 114
+      Script: {instanceID: 13652}
+    - Class: 114
+      Script: {instanceID: 14244}
+    - Class: 114
+      Script: {instanceID: 18250}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -252,6 +375,12 @@ ScriptsOnlyBuild:
     className: AugmentedImageExampleController
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SS
+  - hash:
+      serializedVersion: 2
       Hash: 72712369a7c681ad84fc255a5ec0b333
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -316,18 +445,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.CloudAnchors
     className: NetworkManagerUIController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements
-    className: CallbackExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements.Editor
-    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: 4cb443ffb7b54a755d9852ae91684f7d
@@ -1102,7 +1219,16 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TitleManager
   platform: 13
   scenePathNames:
-  - Assets/GoogleARCore/Examples/CloudAnchors/Scenes/CloudAnchors.unity
-  playerPath: /Users/bashiko_da_gama/Documents/GitHub/Hack-U-project/Hack U Project/testBasi.apk
+  - Assets/Scene/KinokoScene/TitleScene.unity
+  - Assets/Scene/KinokoScene/InfoScene.unity
+  - Assets/Scene/KinokoScene/SettingScene.unity
+  - Assets/Scene/KinokoScene/ARproto1.unity
+  playerPath: C:/Users/obaru/Desktop/Hack-U-project/Hack U Project/Proto3.apk

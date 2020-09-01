@@ -26,9 +26,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scene/KinokoScene/SSkinoko/KinokoSS.unity
     guid: a665e13a94d55e542925f25081587431
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/BashikoScene/JoystickTestScene.unity
     guid: b23d049cda3cf4bf48f872edd01a962b
+  - enabled: 1
+    path: Assets/GoogleARCore/Examples/CloudAnchors/Scenes/CloudAnchors.unity
+    guid: 83fb41cc294e74bdea57537befa00ffc
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 919ff55674381bb499f37f76ab9980c4,
       type: 2}

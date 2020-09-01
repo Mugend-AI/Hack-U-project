@@ -120,7 +120,8 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 7866272790168708070, guid: 919ff55674381bb499f37f76ab9980c4, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -712,10 +713,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 9a7ee786-970c-4ef3-a6eb-fd5a2e137a20
+  cloudProjectId: bb0da43a-c678-41d9-aa8f-6e9e7dced772
   framebufferDepthMemorylessMode: 0
-  projectName: CloudAnchors U3D
-  organizationId: bashiko-da-gama
+  projectName: Hack U Project (2)
+  organizationId: unity_vsy-aqyf_sry5a
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

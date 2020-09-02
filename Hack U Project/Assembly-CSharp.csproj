@@ -256,6 +256,7 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
     <Compile Include="Assets\Scene\KinokoScene\SSkinoko\SSkinoko.cs" />
+    <Compile Include="Assets\Scene\oya0826\SE.cs" />
     <Compile Include="Assets\Scene\oya0826\ScreenShotAndro.cs" />
     <Compile Include="Assets\Scene\oya0826\ScreenShotCapturer.cs" />
     <Compile Include="Assets\Script\AugmentedImageSample.cs" />

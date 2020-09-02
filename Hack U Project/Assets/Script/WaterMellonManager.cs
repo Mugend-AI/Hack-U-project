@@ -18,7 +18,7 @@ public class WaterMellonManager : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private IEnumerator OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Stick") //StickSタグの付いたゲームオブジェクトと衝突したか判別
         {
@@ -27,6 +27,7 @@ public class WaterMellonManager : MonoBehaviour
             GetComponent<MeshRenderer>().enabled = false;
             //Destroy(this.gameObject); //衝突したゲームオブジェクトを削除
             Instantiate(brokenMellon);
+            yield return new WaitForSeconds(0.2f);
             this.GetComponent<SS>().ScreenShot();
         }
     }

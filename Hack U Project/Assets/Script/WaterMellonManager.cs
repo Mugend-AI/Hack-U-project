@@ -30,6 +30,15 @@ public class WaterMellonManager : MonoBehaviour
             GetComponent<MeshRenderer>().enabled = false;
             //Destroy(this.gameObject); //衝突したゲームオブジェクトを削除
             Instantiate(brokenMellon,pos,quaternion);
+
+            /*SEを鳴らすためのオブジェクトの設定とか*/
+            GameObject SEobj;
+            SE SEsc;
+            SEobj = GameObject.Find("SEGameObject");
+            SEsc = SEobj.GetComponent<SE>();
+
+            SEsc.Onbreak();
+
             yield return new WaitForSeconds(0.2f);
             this.GetComponent<SS>().ScreenShot();
         }

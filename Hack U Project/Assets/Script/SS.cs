@@ -16,7 +16,7 @@ public class SS : MonoBehaviour
 
     private IEnumerator TakeSS()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
 
         var w = Screen.width;
         var h = Screen.height;
@@ -50,7 +50,8 @@ public class SS : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(1.5f);
+        
+        //yield return new WaitForSeconds(2f);
 
         // 投稿する
         string tweetText = "てすと";

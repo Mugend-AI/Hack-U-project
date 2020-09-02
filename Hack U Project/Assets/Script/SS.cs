@@ -16,7 +16,7 @@ public class SS : MonoBehaviour
 
     private IEnumerator TakeSS()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
 
         var w = Screen.width;
         var h = Screen.height;

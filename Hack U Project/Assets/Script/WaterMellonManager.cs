@@ -6,10 +6,12 @@ public class WaterMellonManager : MonoBehaviour
 {
     [SerializeField] GameObject hiteffect;
     [SerializeField] GameObject brokenMellon;
+    Vector3 pos;
+    Quaternion quaternion;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -22,11 +24,12 @@ public class WaterMellonManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Stick") //StickSタグの付いたゲームオブジェクトと衝突したか判別
         {
+            pos = this.transform.position;
             Instantiate(hiteffect, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
             GetComponent<SphereCollider>().enabled = false;
             GetComponent<MeshRenderer>().enabled = false;
             //Destroy(this.gameObject); //衝突したゲームオブジェクトを削除
-            Instantiate(brokenMellon);
+            Instantiate(brokenMellon,pos,quaternion);
             yield return new WaitForSeconds(0.2f);
             this.GetComponent<SS>().ScreenShot();
         }

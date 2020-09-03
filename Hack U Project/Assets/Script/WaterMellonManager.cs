@@ -31,6 +31,8 @@ public class WaterMellonManager : MonoBehaviour
             //Destroy(this.gameObject); //衝突したゲームオブジェクトを削除
             Instantiate(brokenMellon,pos,quaternion);
 
+            brokenMellon.transform.SetParent(transform, false); //oya0903　プレハブの大きさ設定
+
             /*SEを鳴らすためのオブジェクトの設定とか*/
             GameObject SEobj;
             SE SEsc;

@@ -5,33 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scene/KinokoScene/TitleScene.unity
-    guid: af7236ddcf4d66e4babbe4c4568e4b66
-  - enabled: 0
-    path: Assets/Scene/KinokoScene/InfoScene.unity
-    guid: c41de8cb7bdee1340a2f784fee3c7d5a
-  - enabled: 0
-    path: Assets/Scene/KinokoScene/SettingScene.unity
-    guid: 9de0c85b5f075ba45b6d1536382a7756
-  - enabled: 0
-    path: Assets/Scene/KinokoScene/ARproto1.unity
-    guid: 3062e8bb72451804193153dce2c09bf3
-  - enabled: 0
-    path: Assets/Scene/BashikoScene/ARProtoBasiko.unity
-    guid: 8300dd09f175a43079b68dad55ad94e5
-  - enabled: 0
-    path: Assets/Scene/oya0826/oya_screentest1.unity
-    guid: a96fb2961133eeb419e4bc756c9632e5
-  - enabled: 0
-    path: Assets/Scene/KinokoScene/SSkinoko/KinokoSS.unity
-    guid: a665e13a94d55e542925f25081587431
-  - enabled: 0
-    path: Assets/Scene/BashikoScene/JoystickTestScene.unity
-    guid: b23d049cda3cf4bf48f872edd01a962b
   - enabled: 1
-    path: Assets/GoogleARCore/Examples/CloudAnchors/Scenes/CloudAnchors.unity
-    guid: 83fb41cc294e74bdea57537befa00ffc
+    path: Assets/Scene/BashikoScene/DriverScene.unity
+    guid: ed388e32563914876b2e065b6ccfc233
+  - enabled: 1
+    path: Assets/Scene/BashikoScene/HostScene.unity
+    guid: 95a7d30b27259418295b688d558793fa
+  - enabled: 1
+    path: Assets/Scene/BashikoScene/CliantScene.unity
+    guid: eaf68ac18f3f348299759d78f09e9990
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 919ff55674381bb499f37f76ab9980c4,
       type: 2}

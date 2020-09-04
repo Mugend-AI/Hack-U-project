@@ -377,6 +377,12 @@
     <Reference Include="Google.IOSResolver_v1.2.122.0">
       <HintPath>/Users/bashiko_da_gama/Documents/GitHub/Hack-U-project/Hack U Project/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.122.0.dll</HintPath>
     </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>/Users/bashiko_da_gama/Documents/GitHub/Hack-U-project/Hack U Project/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>/Users/bashiko_da_gama/Documents/GitHub/Hack-U-project/Hack U Project/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>/Users/bashiko_da_gama/Documents/GitHub/Hack-U-project/Hack U Project/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -391,12 +397,6 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>/Users/bashiko_da_gama/Documents/GitHub/Hack-U-project/Hack U Project/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="Photon3Unity3D">
-      <HintPath>/Users/bashiko_da_gama/Documents/GitHub/Hack-U-project/Hack U Project/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>/Users/bashiko_da_gama/Documents/GitHub/Hack-U-project/Hack U Project/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>/Users/bashiko_da_gama/Documents/GitHub/Hack-U-project/Hack U Project/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -767,14 +767,6 @@
       <Project>{2238F08E-0F7E-17AE-78B4-B358EE5C5245}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="NativeGallery.Editor.csproj">
-      <Project>{0299DDB3-9103-9D35-7519-B78F9F8213DF}</Project>
-      <Name>NativeGallery.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="NativeGallery.Runtime.csproj">
-      <Project>{5ADFEA42-552F-86DB-99EE-A984BB857648}</Project>
-      <Name>NativeGallery.Runtime</Name>
-    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
       <Project>{3909CBA7-72EC-FB3B-19EF-59D72536D514}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
@@ -795,6 +787,10 @@
       <Project>{40AA5E79-E72B-E096-FDA2-9E4FDDA577A5}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
+    <ProjectReference Include="NativeGallery.Editor.csproj">
+      <Project>{0299DDB3-9103-9D35-7519-B78F9F8213DF}</Project>
+      <Name>NativeGallery.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonWebSocket.csproj">
       <Project>{3AB62684-05EC-3E8D-A645-D57598F802B2}</Project>
       <Name>PhotonWebSocket</Name>
@@ -806,6 +802,10 @@
     <ProjectReference Include="PhotonUnityNetworking.csproj">
       <Project>{AA646BA5-B171-6817-6E07-5C370134D8E2}</Project>
       <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
+    <ProjectReference Include="NativeGallery.Runtime.csproj">
+      <Project>{5ADFEA42-552F-86DB-99EE-A984BB857648}</Project>
+      <Name>NativeGallery.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonChat.csproj">
       <Project>{9CFAF15A-6508-66E5-1B21-DC47969D8DEA}</Project>

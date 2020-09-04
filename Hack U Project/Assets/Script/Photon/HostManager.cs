@@ -7,7 +7,7 @@ using GoogleARCore;
 using GoogleARCore.CrossPlatform;
 using UnityEngine.UI;
 
-public class HostManager : RoomManager
+public class HostManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] GameObject watermellon;
     [SerializeField] GameObject stickPrefab;
@@ -32,9 +32,7 @@ public class HostManager : RoomManager
     public override void OnJoinedRoom()
     {
         //マッチング後、ランダムな位置に自分自身のネットワークオブジェクトを生成する
-        var obj = Instantiate(watermellon, new Vector3(100, 100, 100), Quaternion.identity);
         info = PhotonNetwork.Instantiate("InfoObj", new Vector3(100, 100, 100), Quaternion.identity).GetComponent<InfoManager>();
-        //StartCoroutine("MakeStick");
     }
 
     // Update is called once per frame
@@ -63,5 +61,10 @@ public class HostManager : RoomManager
             setAnchor = true;
             anchor = anc;
         }
+    }
+
+    public void Hoge(GameObject obj,Pose pose)
+    {
+
     }
 }

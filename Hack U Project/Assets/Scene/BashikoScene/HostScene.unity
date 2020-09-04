@@ -650,8 +650,8 @@ GameObject:
   m_Component:
   - component: {fileID: 435391244}
   - component: {fileID: 435391243}
-  - component: {fileID: 435391245}
   - component: {fileID: 435391242}
+  - component: {fileID: 435391245}
   m_Layer: 0
   m_Name: HostController
   m_TagString: Untagged
@@ -712,7 +712,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 435391241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1b75f07d33967499dacb65d9be6124, type: 3}
+  m_Script: {fileID: 11500000, guid: 21503fba3649f4f62ba63514e8a82fae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &442658625

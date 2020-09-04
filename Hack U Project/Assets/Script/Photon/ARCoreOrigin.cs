@@ -23,6 +23,7 @@ using GoogleARCore;
 using GoogleARCore.Examples.Common;
 using UnityEngine;
 
+
 /// <summary>
 /// A helper script to set the apparent world origin of ARCore through applying an offset to the
 /// ARCoreDevice (and therefore also it's FirstPersonCamera child); this also provides

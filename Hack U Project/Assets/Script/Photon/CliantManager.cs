@@ -7,12 +7,12 @@ using GoogleARCore;
 using GoogleARCore.CrossPlatform;
 using UnityEngine.UI;
 
-public class CliantManager : RoomManager
+public class CliantManager : MonoBehaviourPunCallbacks
 {
     string cloudID;
     XPAnchor anchor;
     ARCoreOrigin arCoreOrigin;
-    [SerializeField] GameObject suika;
+
     [SerializeField] GameObject stickPrefab;
     GameObject stick;
     Text text;
@@ -38,8 +38,6 @@ public class CliantManager : RoomManager
         //マッチング後、ランダムな位置に自分自身のネットワークオブジェクトを生成する
         var v = new Vector3(Random.Range(-3f, 3f), Random.Range(-3f, 3f));
         stick = PhotonNetwork.Instantiate("StickVariant",new Vector3(0,0,0),Quaternion.identity);
-        suika = PhotonNetwork.Instantiate("WaterMellon", new Vector3(0,0,0), Quaternion.identity);
-        //stick = Instantiate(stickPrefab,new Vector3(0,0,0.1f), Quaternion.identity);
         text.text = "a";
         StartCoroutine("SetCloudID");
     }
@@ -73,8 +71,7 @@ public class CliantManager : RoomManager
                  stick.transform.parent = anchor.transform;
                  var camera = GameObject.FindWithTag("CliantCamera");
                  stick.GetComponent<StickManager>().SetCamera(camera,anchor);
-                 suika.transform.parent = anchor.transform;
-                 suika.transform.localPosition = Vector3.zero;
+                 text.text = anchor.transform.position.ToString();
              }));
         info.ConnectFinish();
     }

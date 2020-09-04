@@ -285,6 +285,7 @@
     <Compile Include="Assets\Script\Photon\HostManager.cs" />
     <Compile Include="Assets\Script\Photon\InfoManager.cs" />
     <Compile Include="Assets\Script\Photon\PhotonGamePlayer.cs" />
+    <Compile Include="Assets\Script\Photon\PutManager.cs" />
     <Compile Include="Assets\Script\Photon\RoomManager.cs" />
     <Compile Include="Assets\Script\Photon\SampleScene.cs" />
     <Compile Include="Assets\Script\Photon\SampleScene2.cs" />

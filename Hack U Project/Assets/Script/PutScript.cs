@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using GoogleARCore;
+using GoogleARCore.CrossPlatform;
+using UnityEngine.UI;
+using Photon.Pun;
 
 public class PutScript : MonoBehaviour
 {
-    [SerializeField] GameObject watermellon;
     private bool putFin;
+    private string cloudID;
+    ARCoreOrigin arCoreOrigin;
     // Start is called before the first frame update
     void Start()
     {
-        
+        arCoreOrigin = GameObject.Find("ARCoreOrigin").GetComponent<ARCoreOrigin>();
+       
     }
 
     // Update is called once per frame
@@ -36,16 +41,41 @@ public class PutScript : MonoBehaviour
                     Vector3.Dot(Camera.main.transform.position - hit.Pose.position,
                     hit.Pose.rotation * Vector3.up) > 0)
                 {
+
                     //スイカの位置・姿勢を指定
+                    /*
                     watermellon.transform.position = hit.Pose.position;
                     watermellon.transform.rotation = hit.Pose.rotation;
                     watermellon.transform.Rotate(0, 0, 0, Space.Self);
-
+                    */
                     //Anchorを設定
                     var anchor = hit.Trackable.CreateAnchor(hit.Pose);
-                    watermellon.transform.parent = anchor.transform;
+                    GameObject.Find("Text").GetComponent<Text>().text = "接続中";
+                    XPSession.CreateCloudAnchor(anchor).ThenAction(result =>
+                    {
+                        if (result.Response != CloudServiceResponse.Success)
+                        {
+                            Debug.Log(string.Format("Failed to host Cloud Anchor: {0}", result.Response));
+                            GameObject.Find("Text").GetComponent<Text>().text = result.Response.ToString();
+                            return;
+                        }
+
+                        Debug.Log(string.Format(
+                            "Cloud Anchor {0} was created and saved.", result.Anchor.CloudId));
+                        GameObject.Find("Text").GetComponent<Text>().text = "成功";
+                        cloudID = result.Anchor.CloudId;
+                        arCoreOrigin.SetWorldOrigin(result.Anchor.transform);
+                        var manager = GameObject.Find("HostController").GetComponent<HostManager>();
+                        manager.SetAnchorID(cloudID,result.Anchor);
+                    });
+                    //watermellon.transform.parent = anchor.transform;
                 }
             }
         }
+    }
+
+    public string CloudID
+    {
+        get { return cloudID; }
     }
 }

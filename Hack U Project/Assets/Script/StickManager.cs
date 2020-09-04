@@ -1,26 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using GoogleARCore.CrossPlatform;
+using UnityEngine.UI;
 
-public class StickManager : MonoBehaviour
+public class StickManager : MonoBehaviourPunCallbacks
 {
-    private GameObject stickPosition;
+    GameObject camera;
+    private bool start;
+    XPAnchor anchor;
+    Text text;
     // Start is called before the first frame update
     void Start()
     {
-        stickPosition = GameObject.FindWithTag("StickPosition");
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(stickPosition == null)
+        if (photonView.IsMine)
         {
-            stickPosition = GameObject.FindWithTag("StickPosition");
+            var posi = camera.transform.position;
+            posi.z += 0.1f;
+            transform.position = posi;
         }
         else
         {
-            transform.position = stickPosition.transform.position;
+
         }
+    }
+
+    public void SetCamera(GameObject cam,XPAnchor anc)
+    {
+
+        camera = cam;     
     }
 }

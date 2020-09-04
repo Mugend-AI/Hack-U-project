@@ -42,9 +42,9 @@ public class Trackingtest: MonoBehaviour
                         break;
                     case 1://棒マーカー（ルカリオV）
                         obj = GameObject.Instantiate(stick, anchor.transform);
-                        obj.transform.localPosition = new Vector3(0, 0, 0);
+                        obj.transform.localPosition = new Vector3(0, 0, 0.15f);
                         obj.transform.Rotate(0, 0, 0, Space.Self);
-                        obj.transform.localScale = new Vector3(0.1f, 0.1f, 0.4f);
+                        obj.transform.localScale = new Vector3(0.05f,0.05f,0.8f);
                         markerDic.Add(index, obj);
                         break;
                 }
